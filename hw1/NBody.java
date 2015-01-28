@@ -8,10 +8,10 @@ public class NBody {
 		double y= in.readDouble();
 
 		Planet[] planetArray= new Planet[n];
-		int i=0;
-		while (i<=n-1){
-			planetArray[i]=getPlanet(in);
-			i=i+1;
+		int a=0;
+		while (a<=n-1){
+			planetArray[a]=getPlanet(in);
+			a=a+1;
 		}
 
 		StdDraw.setScale(-y, y);
@@ -48,9 +48,9 @@ public class NBody {
 
 			time=time+dt;
 		}
-		StdOut.printf("%d\n", N);
-		StdOut.printf("%.2e\n", R);
-		for (int i = 0; i < N; i++) {
+		StdOut.printf("%d\n", n);
+		StdOut.printf("%.2e\n", y);
+		for (int i = 0; i < n; i++) {
     		StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
                    planetArray[i].x, planetArray[i].y, planetArray[i].xVelocity, planetArray[i].yVelocity, planetArray[i].mass, planetArray[i].img);
     	}
