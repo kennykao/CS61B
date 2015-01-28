@@ -13,7 +13,6 @@ public class NBody {
 			planetArray[a]=getPlanet(in);
 			a=a+1;
 		}
-
 		StdDraw.setScale(-y, y);
 		StdDraw.picture(0,0,"images/starfield.jpg");
 
