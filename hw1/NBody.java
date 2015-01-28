@@ -52,7 +52,7 @@ public class NBody {
 		StdOut.printf("%.2e\n", R);
 		for (int i = 0; i < N; i++) {
     		StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
-                   px[i], py[i], vx[i], vy[i], mass[i], image[i]);
+                   planetArray[i].x, planetArray[i].y, planetArray[i].xVelocity, planetArray[i].yVelocity, planetArray[i].mass, planetArray[i]).img;
     	}
 	}
 	public static Planet getPlanet(In object){
