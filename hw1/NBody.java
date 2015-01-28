@@ -15,11 +15,11 @@ public class NBody {
 		}
 
 		StdDraw.setScale(-y, y);
-		StdDraw.picture(0,0,"/images/starfield.jpg");
+		StdDraw.picture(0,0,"images/starfield.jpg");
 
 		int q=0;
 		while (q<=n-1) {
-			StdDraw.picture(planetArray[q].x,planetArray[q].y, "/images/" + planetArray[q].img);
+			StdDraw.picture(planetArray[q].x,planetArray[q].y, "images/" + planetArray[q].img);
 			q=q+1;
 		}
 
@@ -37,11 +37,11 @@ public class NBody {
 				c=c+1;
 			}
 
-			StdDraw.picture(0,0,"/images/starfield.jpg");
+			StdDraw.picture(0,0,"images/starfield.jpg");
 
 			int w=0;
 			while (w<=n-1){
-				StdDraw.picture(planetArray[w].x,planetArray[w].y,"/images/"+planetArray[w].img);
+				StdDraw.picture(planetArray[w].x,planetArray[w].y,"images/"+planetArray[w].img);
 				w=w+1;
 			}
 			StdDraw.show(10);
